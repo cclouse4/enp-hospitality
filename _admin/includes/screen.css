@@ -1,0 +1,340 @@
+/* CSS Document */
+
+body {background-color: #ffffff;font: 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;color: #666666; }
+a {font-size: 11px; color: #000000; text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.button {
+    background: transparent url('../images/bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px Arial, Helvetica, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.button span {
+    background: transparent url('../images/bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+} 
+
+a.button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:hover {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+a.button:hover span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+} 
+
+a.buttonSmall {
+    background: transparent url('../images/bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px Arial, Helvetica, sans-serif;
+    height: 24px;
+    margin-right: 5px;
+    padding-right: 9px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.buttonSmall span {
+    background: transparent url('../images/bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 9px;
+} 
+
+a.buttonSmall:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.buttonSmall:hover {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.buttonSmall:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 9px; /* push text down 1px */
+}
+
+a.buttonSmall:hover span {
+    background-position: bottom left;
+    padding: 6px 0 4px 9px; /* push text down 1px */
+} 
+
+#mytable {
+	width: 700px;
+	padding: 0;
+	margin: 0;
+}
+
+caption {
+	padding: 0 0 5px 0;
+	width: 700px;	 
+	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+.clearTD {
+	padding: 0px 0px 0px 0px;
+	
+}
+
+.clearTable td{
+	padding: 0px 0px 0px 0px;
+}
+
+#displayTable th {
+	font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	/*letter-spacing: 2px;*/
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(../images/bg_header.jpg) no-repeat;
+}
+
+#displayTable th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}	
+
+#displayTable td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 0px 0px 0px 0px;
+	color: #4f6b72;
+}
+
+
+#displayTable td.alt {
+	background: #F5FAFA;
+	color: #797268;
+	font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#displayTable span.aLeft {
+	float:left;
+}
+
+#displayTable th.spec {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url(../images/bullet1.gif) no-repeat;
+	font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#displayTable th.specalt {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #f5fafa url(../images/bullet2.gif) no-repeat;
+	font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}
+
+#displayTable th.formTitle {
+	border-left: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;	
+	border-right: 1px solid #C1DAD7;	
+	border-top: 0;
+	background: #f5fafa url(../images/bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}
+
+
+
+#displayTable th.endCap {
+	border-left: 1px solid #C1DAD7;
+}
+
+#displayTable th.formInput {
+	background: #FFFFFF;
+	border-bottom: 0px;	
+	border-right: 1px solid #C1DAD7;	
+	border-top: 1px solid #C1DAD7;	
+}
+
+#displayTable td.formInput {
+	background: #FFFFFF;
+	border-bottom: 0px;	
+	border-right: 1px solid #C1DAD7;	
+	border-top: 1px solid #C1DAD7;	
+}
+
+#displayTable th.whtCell {
+	background: #FFFFFF;
+	border: 0px;	
+}
+
+#displayTable th.topCap {
+	background: #FFFFFF;
+	border-bottom: 0px;	
+	border-right: 0px;		
+	border-left: 0px;			
+	border-top: 1px solid #C1DAD7;	
+}
+
+.title { font: bold 18px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; line-height: 38px; }
+a.title { font-weight: bold; text-decoration: none; color: #666666; }
+a.title:hover, a.title:visited:hover { text-decoration: underline; color: #666666; }
+a.title:visited { text-decoration: none; }
+
+.subtitle { font: bold 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; color: #4f6b72; line-height: 38px; }
+a.subtitle { font-weight: bold; text-decoration: none; color: #4f6b72; }
+a.subtitle:hover, a.subtitle:visited:hover { text-decoration: underline; color: #666666; }
+a.subtitle:visited { text-decoration: none; }
+
+hr.hr4 { border-top: 1px dashed #C1DAD7; border-bottom: 1px solid #C1DAD7; color: #fff; background-color: #fff; height: 4px; border-left: 0px; border-right: 0px; }
+
+
+.small_text { font: 12x "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; }
+
+.order {font-family: Arial, Helvetica, sans-serif; font-size: 12px;}
+
+/* Menu System */
+a.adminnav 
+{ 
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold; 
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica;
+	text-decoration: underline;
+}
+
+a.adminnav:hover
+{ 	font-size: 12px; 
+	color: #D45500;
+	font-weight: bold; 
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica; 
+	text-decoration: underline;
+}
+
+
+.menuitem
+{
+  font-size: 12px;
+  color: #000000;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica;
+  text-decoration: none;
+}
+
+.menuitem:hover
+{
+  font-size: 12px;
+  color: #0000ff;
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica;
+  
+}
+
+.menuwrapper
+{
+  left: 15px;
+  position: relative;
+  width: 180px;
+}	
+
+.menuitem 
+{ 
+	font-size: 12px;
+	color: #000000;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica;
+	text-decoration: none;
+}
+
+.menuitem:hover
+{ 	font-size: 12px; 
+	color: #D45500; 
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica; 
+}
+
+.menuwrapper 
+{ 	left: 15px; 
+	position: relative; 
+	width: 500px; 
+}
+
+
+/*Forms defaults - change as needed*/
+input, textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#404040;
+}
+
+
+
+/*Text inputs*/
+.textinput, .textinputHovered {
+	height:15px;
+	background:url(images/input_bg.gif) repeat-x left top;
+	border:none;
+	padding:4px 0;
+	vertical-align:middle;
+}
+.textinputHovered {background-position:left bottom;}
+.inputCorner {
+	padding-bottom:0;
+	vertical-align:middle;
+}
+
+/*Text areas*/
+.txtarea .tr, .txtarea .tr_xon {background:url(images/txtarea_tr.gif) no-repeat top right;}
+.txtarea .tr_xon {background:url(images/txtarea_tr_xon.gif) no-repeat top right;}
+.txtarea img.txt_corner {
+	width:5px;
+	height:5px;
+	display:block;
+}
+.txtarea .br, .txtarea .br_xon {background:url(images/txtarea_br.gif) no-repeat top right;}
+.txtarea .br_xon {background:url(images/txtarea_br_xon.gif) no-repeat top right;}
+.txtarea .cntr {background:url(images/txtarea_cntr.gif) repeat-y right top;}
+.txtarea .cntr_xon {background:url(images/txtarea_cntr_xon.gif) repeat-y right top;}
+.txtarea .cntr_l, .txtarea .cntr_l_xon {
+	width:5px;
+	background:url(images/txtarea_l.gif) repeat-y left top;
+	float:left;
+}
+.txtarea .cntr_l_xon {background:url(images/txtarea_l_xon.gif) repeat-y left top;}
+.txtarea textarea {
+	border:0;
+	background:none;
+	padding:0;
+	margin:5px;
+}
+
+

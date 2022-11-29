@@ -1,0 +1,78 @@
+<%@ Page Language="VB" ContentType="text/html" ResponseEncoding="iso-8859-1" %>
+<%@ Import Namespace="Chemistry" %>
+<!--#include file="_utilities/security.aspx" -->
+<!--#include file="includes/menu_functions.aspx" -->
+<!--#include file="includes/sitewide.aspx" -->
+<%
+	' page variables
+	Dim sPageData As String = ""
+	Dim i As Integer
+	' template variables -- These control the page fucntionality and display
+	Dim sPageType As String = "List"					' Use Detail, List, Delete
+	Dim sPageObject As String = "Custom Content"					' The type of page, used for text display to identify what is going on
+	Dim sFormActionURL As String = "ContentAction.aspx"	' filename of the action page used for this module
+	Dim sFormDetailURL As String = "ContentDetail.aspx"	' filename of the detail page used for this module
+	Dim sPrimaryKey As String = "id"				' primary key of the table associated with this module
+	Dim sTableName As String = "tblContent"				' database table name
+	Dim bCanAdd As Boolean = true
+	Dim iRecCount As Integer = 0
+	
+	Dim sColumnHeaders() As String = { "Section","Sort","Action" }
+	' data specific vars
+	Dim iID As Integer
+	Dim sTitle As String
+	Dim _iID As Integer
+	Dim _sTitle As String
+	Dim _r As New System.Collections.ArrayList
+	
+	Dim db As New DBObject(ConfigurationSettings.AppSettings("connString"))
+	db.OpenConnection()
+	
+	db.RunQuery("select * from tblContent where parentId <= 0 order by SortOrder asc")
+	while db.InResults()
+		_iID = db.GetItem(sPrimaryKey)
+		_sTitle = db.GetItem("name")
+		Dim __r() As String = { _iID,db.GetItem("parentId"),_sTitle }
+		_r.Add(__r)		
+	end while
+	
+	for each __r() As String in _r
+		iRecCount = 0
+		sPageData += "<tr><th scope='row' class='specalt' width='500'>"& __r(2) &"</th><th class='specalt'></th>"
+		sPageData += "<th class='specalt' width='250'><a href='"& sFormDetailURL &"?Action=Edit&"& sPrimaryKey &"="& __r(0) &"'>edit</a> "
+		if __r(1) > -1 then
+			sPageData += "| <a href='javascript:DeleteListing("& __r(0) &")'>delete</a>"
+		end if
+		sPageData += "</th></tr>"
+		
+		db.RunQuery("select * from "& sTableName &" where parentId = "& __r(0) &" order by SortOrder asc")	
+		while db.InResults()
+			iID = db.GetItem(sPrimaryKey)
+			sTitle = db.GetItem("name")
+			
+			sPageData += "<tr><th scope='row' class='specalt' width='500'>&nbsp;&nbsp;&nbsp;&nbsp;"& sTitle &"</th>"
+			if iRecCount = 0 then
+				if db.NumRows() > 1 then
+					sPageData += "<th class='specalt' width='100'><a href='"& sFormActionURL &"?Action=Sort&"& sPrimaryKey &"="& iID &"&parentId="& __r(0) &"&SortDirection=1'><img src='images/arrowDown.gif' border='0'></a> "
+				else
+					sPageData += "<th class='specalt' width='100'></th>"
+				end if
+			else if iRecCount = db.NumRows() - 1 then
+			   sPageData += "<th class='specalt' width='100'><a href='"& sFormActionURL &"?Action=Sort&"& sPrimaryKey &"="& iID &"&parentId="& __r(0) &"&SortDirection=0'><img src='images/arrowUp.gif' border='0'/></a></th>"
+			else
+				sPageData += "<th class='specalt' width='100'><a href='"& sFormActionURL &"?Action=Sort&"& sPrimaryKey &"="& iID &"&parentId="& __r(0) &"&SortDirection=1'><img src='images/arrowDown.gif' border='0'></a> <a href='"& sFormActionURL &"?Action=Sort&"& sPrimaryKey &"="& iID &"&parentId="& __r(0) &"&SortDirection=0'><img src='images/arrowUp.gif' border='0'/></a></th>"
+			end if
+			sPageData += "<th class='specalt' width='250'><a href='"& sFormDetailURL &"?Action=Edit&"& sPrimaryKey &"="& iID &"'>edit</a> | <a href='javascript:DeleteListing("& iID &")'>delete</a>"
+	
+			sPageData += "</th>"
+			iRecCount += 1
+		end while	
+	next __r
+	
+	db.CloseConnection()
+	
+	if len(sPageData) = 0 then
+		sPageData = "<tr><th scope=row' class='specalt' colspan='4'><i>There are no "& sPageObject &"s found in the database.</i></th></tr>"
+	end if
+%>
+<!--#include file="templates/List.aspx" -->

@@ -1,0 +1,1 @@
+.defaultSkin span.mce_netImageBrowser {background:url(../../img/folder_picture.png);width:16px;height:16px;}

@@ -1,0 +1,90 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 14.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Eastern Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="Baskin, Erin";RSVP=TRUE:mailto:ebaskin@eatnpark.com
+ATTENDEE;CN="Bates, Carol";RSVP=TRUE:mailto:cbates@eatnpark.com
+ATTENDEE;CN="Bosle, Traycee";RSVP=TRUE:mailto:tbosle@eatnpark.com
+ATTENDEE;CN="Catapano, Stephen";RSVP=TRUE:mailto:scatapano@eatnpark.com
+ATTENDEE;CN="Corrigan, Perla";RSVP=TRUE:mailto:PCorrigan@eatnpark.com
+ATTENDEE;CN="DeMarco, Trina";RSVP=TRUE:mailto:tdemarco@eatnpark.com
+ATTENDEE;CN="Dockery, Sean";RSVP=TRUE:mailto:sdockery@eatnpark.com
+ATTENDEE;CN="Giacobbi, Amanda";RSVP=TRUE:mailto:agiacobbi@eatnpark.com
+ATTENDEE;CN="Harrison, Ashley";RSVP=TRUE:mailto:aharrison@eatnpark.com
+ATTENDEE;CN="Heisey, Sarah";RSVP=TRUE:mailto:sheisey@eatnpark.com
+ATTENDEE;CN="Johnson, Janine";RSVP=TRUE:mailto:jjohnson@eatnpark.com
+ATTENDEE;CN="McArdle, Becky";RSVP=TRUE:mailto:BMcArdle@eatnpark.com
+ATTENDEE;CN="Mercuri, Antonio";RSVP=TRUE:mailto:amercuri@eatnpark.com
+ATTENDEE;CN="Miller, Cliff";RSVP=TRUE:mailto:cmiller@eatnpark.com
+ATTENDEE;CN="Montagna, Tammi";RSVP=TRUE:mailto:TMontagna@eatnpark.com
+ATTENDEE;CN="O'Connell, Kevin";RSVP=TRUE:mailto:koconnell@eatnpark.com
+ATTENDEE;CN="Park, Sky";RSVP=TRUE:mailto:spark@eatnpark.com
+ATTENDEE;CN="Simak, Cindy";RSVP=TRUE:mailto:CSimak@eatnpark.com
+ATTENDEE;CN="Stoughton, Erin";RSVP=TRUE:mailto:estoughton@eatnpark.com
+ATTENDEE;CN="Taccone, Alan";RSVP=TRUE:mailto:ataccone@eatnpark.com
+ATTENDEE;CN="Cort, Ariana";RSVP=TRUE:mailto:acort@eatnpark.com
+ATTENDEE;CN="Lachut, Suzie";RSVP=TRUE:mailto:slachut@parkhurstdining.com
+ATTENDEE;CN="Michalenko, Nicholas";RSVP=TRUE:mailto:NMichalenko@eatnpark.co
+	m
+ATTENDEE;CN="Irion, Caitlin";ROLE=OPT-PARTICIPANT;RSVP=TRUE:mailto:cirion@e
+	atnpark.com
+CLASS:PUBLIC
+CREATED:20140226T212901Z
+DESCRIPTION:We are going bowling! \n\nWe will be heading over to Forward La
+	nes in Squirrel Hill to bowl.  Afterwards we will be going to the Porch fo
+	r pizza!\n\nForward Lanes\n5844 Forward Ave\nPittsburgh Pa 15217\n \n
+DTEND;TZID="Eastern Standard Time":20140305T190000
+DTSTAMP:20140224T192733Z
+DTSTART;TZID="Eastern Standard Time":20140305T160000
+LAST-MODIFIED:20140226T212901Z
+LOCATION:Forward Lanes
+ORGANIZER;CN="Frattini, Kayla":mailto:kfrattini@eatnpark.com
+PRIORITY:5
+SEQUENCE:1
+SUMMARY;LANGUAGE=en-us:First Quarter Team Outing
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E008000000008081E8FC6717CF01000000000000000
+	010000000E2B3C2E267DB454DB86ABE196E4010EE
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion 14.02.5004.000">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted f
+	rom text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Calib
+	ri">We are going bowling! </FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-
+	us"><FONT FACE="Calibri">We will be heading over to Forward Lanes in Squir
+	rel Hill to bowl.&nbsp\; Afterwards we will be going to the Porch for pizz
+	a!</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Calibri"
+	>Forward Lanes</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FA
+	CE="Calibri">5844 Forward Ave</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="
+	en-us"><FONT FACE="Calibri">Pittsburgh Pa 15217</FONT></SPAN></P>\n\n<P DI
+	R=LTR><SPAN LANG="en-us"><FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="en
+	-us">&nbsp\;</SPAN></P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INTENDEDSTATUS:OOF
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-APPTSEQTIME:20140122T165141Z
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

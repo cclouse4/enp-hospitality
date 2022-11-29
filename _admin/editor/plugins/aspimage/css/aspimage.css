@@ -1,0 +1,106 @@
+/* CSS file for aspimage plugin popup */
+
+.leftColumn	{float:left;width: 58%;}
+.rightColumn{float: right;width: 38%;}
+.explorer
+{
+	height: 260px;
+	background-color: white;
+	overflow : scroll;
+}
+.error{text-align:center;color:red;}
+.explorer table
+{
+	width:99%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.explorer td
+{padding: 0px 5px;}
+
+.darkRow
+{background-color: #F0F0EE;}
+
+.explorer th
+{font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 11px;}
+
+.explorer table a:link {color: #000; text-decoration:none;}
+.explorer table a:active {color: #000; text-decoration:none;}
+.explorer table a:visited {color: #000; text-decoration:none;}
+.explorer table a:hover {color: blue; text-decoration:none;}
+
+
+/* CSS file for advimage plugin popup */
+
+.mceImageList {
+	width: 280px;
+}
+
+.mceActionPanel {
+	margin-top: 7px;
+}
+
+.alignPreview {
+	border: 1px solid black;
+	width: 140px;
+	height: 140px;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.checkbox {
+	border: 0px;
+}
+
+.panel_wrapper div.current {
+	height: 305px;
+}
+
+#prev {
+	margin:0px;
+	width: 99%;
+	height:274px;
+	overflow: auto;
+}
+
+#src{width: 99%;}
+
+#align, #classlist {
+	width: 150px;
+}
+
+#width, #height {
+	vertical-align: middle;
+	width: 50px;
+	text-align: center;
+}
+
+#vspace, #hspace, #border {
+	vertical-align: middle;
+	width: 30px;
+	text-align: center;
+}
+
+#classlist {
+	width: 180px;
+}
+
+#constrain, #onmousemovecheck {
+	width: auto;
+}
+
+#id, #dir, #lang, #usemap, #longdesc {
+	width: 200px;
+}
+#src_list, #over_list, #out_list {width:280px;}
+.mceActionPanel {margin-top:7px;}
+.alignPreview {border:1px solid #000; width:140px; height:140px; overflow:hidden; padding:5px;}
+.checkbox {border:0;}
+.panel_wrapper div.current {height:315px;}
+#align, #classlist {width:150px;}
+#width, #height {vertical-align:middle; width:50px; text-align:center;}
+#vspace, #hspace, #border {vertical-align:middle; width:30px; text-align:center;}
+#class_list {width:180px;}
+input {width: 280px;}
+#constrain, #onmousemovecheck {width:auto;}
+#id, #dir, #lang, #usemap, #longdesc {width:200px;}

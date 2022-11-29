@@ -1,0 +1,487 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	z-index: 1;
+	background-image:url(../images/background2.png);
+	background-position: top center;
+	background-repeat: repeat;
+	background-color: #b3b1af;
+}
+
+#wrapper {
+	width: 100%;
+	z-index: 1;
+}
+
+#header {
+	
+	z-index: 1;
+	width: 100%;
+	height: 130px;
+	background-image:url(../images/header.gif);
+	background-position: top center;
+	background-repeat: repeat-x;
+}
+
+#header_inner {
+	width: 945px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header img {
+	margin-left: 25px;
+	padding-top: 25px;
+}
+
+#main_nav {
+	margin-left: 425px;
+	margin-top: -16px;
+	/*padding-top: 50px;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #aeaeae;	
+	min-width: 500px;
+}
+
+#main_nav_index {
+	margin-left: 425px;
+	padding-top: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #aeaeae;	
+	min-width: 500px;
+}
+
+#header ul {
+	text-align: center;
+	display: inline;
+	list-style-type: none;	
+}
+
+#header ul li {
+	display: inline;
+}
+
+#header a, a:focus, a:active {
+	text-decoration: none;
+	color: #aeaeae;
+}
+
+#header a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+#header a.current_page, a.current_page:hover, a.current_page:focus, a.current_page:active {
+	text-decoration: none;
+	color: white;
+}
+
+
+
+#content_homepage {
+	position: relative;
+	z-index: 2;
+	/*width: 1292px;*/
+	width: 100%;
+	margin-top: -50px;
+	margin-left: auto;
+	margin-right: auto;
+			
+}
+
+#content {
+	position: relative;
+	z-index: 2;
+	/*width: 1292px;*/
+	width: 100%;
+	min-height: 625px;
+	margin-top: -50px;
+	margin-left: auto;
+	margin-right: auto;
+			
+}
+
+
+#topbox_homepage {
+	width: 945px;
+	height: 393px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image:url(../images/topbox_homepage_background.png);
+	background-position: top center;	
+}
+
+#topbox {
+	width: 945px;
+	height: 169px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image:url(../images/topbox_background.png);
+	background-position: top center;	
+}
+
+#topbox img {
+	padding-top: 3px; 
+	padding-left: 7px;
+	height: 159px;
+	width: 934px;
+}
+
+#topbox_homepage_content {
+	padding-top: 312px;	
+	padding-left: 25px;
+}
+
+#topbox_homepage_content p {
+	color: #999999;
+	padding-top: 5px;
+	font-size: 11px;
+	line-height: 15px;
+
+		
+}
+
+#middlebox_homepage {
+	width: 945px;
+	height: 293px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image:url(../images/middlebox_homepage_background.png);
+	background-position: top center;
+}
+
+#middlebox {
+	width: 945px;
+	/*height: 400px;*/
+	/*margin-top: 5px;*/
+	min-height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image:url(../images/middlebox_background.png);
+	background-repeat: repeat-y;
+	background-position: top center;
+
+}
+
+#middlebox_top {
+	width: 945px;
+	height: 8px;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+	background-image:url(../images/middlebox_background_top.png);
+	background-position: top center;
+
+}
+
+#middlebox_bottom {
+	width: 945px;
+	height: 9px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image:url(../images/middlebox_background_bottom.png);
+	background-position: top center;
+
+}
+
+#middlebox_content {
+	margin-left: 10px;
+}
+
+
+
+#middlebox_spacer {
+	width: 945px;
+	height: 45px;	
+}
+
+
+#middlebox_homepage_left {
+	width: 425px;
+	height: 198px;
+	padding-top: 10px;
+	padding-left: 8px;
+	background-image:url(../images/logo_background.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#middlebox_homepage_left_inner {
+
+	margin-left: 10px;
+
+}
+
+#middlebox_homepage_left_inner a img {
+
+	border: none;
+
+}
+
+
+#middlebox_homepage_right {
+	width: 400px;
+	margin-left: 40px;
+	float: left;
+}
+
+#middlebox_homepage_right h2 {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+
+#middlebox_homepage_right p {
+	color: #868686;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: .05em;
+}
+
+#middlebox_homepage_right span.paragraph {
+	color: #868686;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 15px;
+	letter-spacing: .05em;
+}
+
+#imagebox_homepage {
+	width: 945px;
+	height: 206px;
+	margin-top: 5px;
+
+	margin-left: auto;
+	margin-right: auto;
+	background-image:url(../images/imagebox_background.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+
+}
+
+#imagebox_homepage table {
+	/*margin-top: 5px;*/
+	margin-left: 6px;
+	border-width:1px; 
+	border-style: solid; 
+	border-collapse:collapse; 
+	border-color:white;	
+}
+
+#imagebox_homepage td {
+	border-width:1px; 
+	border-style: solid; 
+	border-collapse:collapse; 
+	border-color:white;
+}
+
+#imagebox_homepage p {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #cccccc;
+	margin-top: 5px;
+}
+
+#imagebox_homepage_left {
+	width: 310px;
+	height: 195px;
+	position: relative;
+	background-image:url(../images/imagebox/cura.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+#imagebox_homepage_left_inner {
+	height:24px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-image:url(../images/imagebox/caption_background.png);
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	
+}
+
+#imagebox_homepage_middle {
+	width: 310px;
+	height: 195px;
+	position: relative;
+	background-image:url(../images/imagebox/smiley.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+#imagebox_homepage_middle_inner {
+	height:24px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-image:url(../images/imagebox/caption_background.png);
+	background-position: bottom center;
+	background-repeat: repeat-x;	
+}
+
+#imagebox_homepage_right {
+	width: 310px;
+	height: 195px;
+	position: relative;
+	background-image:url(../images/imagebox/6penn.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+#imagebox_homepage_right_inner {
+	height:24px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background-image:url(../images/imagebox/caption_background.png);
+	background-position: bottom center;
+	background-repeat: repeat-x;	
+}
+
+#footer {
+	/*width:1292px;*/
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	margin-top: -60px;
+}
+
+#contact {
+	/*width: 1292px;*/
+	width: 100%;
+	height: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-image:url(../images/contact_background2.gif);
+	background-position: top center;
+	background-repeat: repeat-x;
+}
+
+#contact_content {
+	width: 700px;
+	height: 225px;
+	padding-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact_content .top {
+	font-family: 'Century Gothic', 'Tw Cen MT', Futura, 'URW Gothic L', Arial, sans-serif;
+	font-size: 12px;
+	color: #404040; 
+	font-weight: bold;
+}
+
+#contact_content .middle {
+	font-family:  Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+	color: #e7e7e7;
+}
+
+#contact_content .bottom {
+	font-family:  Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+	color: #494d54;
+}
+
+
+#contact_bottom {
+	/*width: 1292px;*/
+	width: 100%;
+	height: 9px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 0;
+	background-image:url(../images/contact_bottom.png);
+	background-position: top center;
+	background-repeat: repeat-x;
+
+}
+
+#footer_bottom {
+	/*width: 1292px;*/
+	width: 100%;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image:url(../images/footer.gif);
+	background-position: top center;
+	background-repeat: repeat-x;
+}
+
+#footer_bottom_content {
+	padding-top: 10px;
+	width: 600px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#footer_bottom_content_left {
+	width: 350px;
+	position: relative;
+	float: left;
+}
+
+#footer_bottom_content_right {
+	width: 124px;
+	float: left;
+}
+
+#footer_bottom_content .top {
+	color: #88adea;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	position: absolute;
+	right: 0px;
+}
+
+#footer_bottom_content .bottom {
+	color: #cccccc;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	position: absolute;
+	right: 0px;
+}
+
+#footer_bottom_content a, a:focus, a:active {
+	text-decoration: none;
+	color: #cccccc;
+}
+
+#footer_bottom_content a:hover {
+	text-decoration: none;
+	color: white;
+}
+
