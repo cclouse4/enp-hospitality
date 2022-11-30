@@ -120,7 +120,28 @@
 <script src="js/modalPopup.js" type="text/javascript"></script>
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: HelveticaLTWXX-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/helvetica/pro-regular/
+ * Copyright: Copyright © 2014 Monotype Imaging Inc. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Incn*/
 
+-->
+
+<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
 </head>
 
 <body>
@@ -134,7 +155,7 @@
     	<div id="header">
         	<div id="header_inner">
             
-                <a href="index.aspx"><img src="images/header_logo.png" alt="Eat'n Park Logo" /></a>
+                <a href="index.aspx"><img src="images/header_logo_dec22.png" alt="Eat'n Park Logo" /></a>
                 <div id="main_nav">
                         
                         
@@ -253,7 +274,7 @@
         <div id="footer">
         
         	<div id="contact">
-            	<div id="contact_content">
+            	<!-- <div id="contact_content">
                 	
                     <div style="float: left;">
                     	<img src="images/contact_divider_1.png" alt="Divider" style="vertical-align:middle;"/><img src="images/contact_information.png" alt="Contact Information" style="margin-left: 25px; vertical-align: middle;"/>
@@ -261,7 +282,6 @@
                     	
                     <div style="float: left; margin-left: 75px;">
                     		<div style="float:left;"><img src="images/contact_divider_1.png" alt="Divider" style="vertical-align:middle;"/></div>
-                        <!--<div style="margin-left: 20px;">-->
                         	
                         	<div style="float:left;margin-left: 30px;margin-top:5px;">
                             
@@ -276,7 +296,6 @@
                     
                     <div style="float: left; margin-left: 75px;">
                     		<div style="float:left;"><img src="images/contact_divider_1.png" alt="Divider" style="vertical-align:middle;"/></div>
-                        <!--<div style="margin-left: 20px;">-->
                         	
                         	<div style="float:left;margin-left: 30px;margin-top:5px;">
                                 
@@ -290,7 +309,8 @@
                     </div>
                 
                 
-                </div><!--End Contact Content-->
+                </div> -->
+								<!--End Contact Content-->
             
                 <div id="contact_bottom">
                 
@@ -300,20 +320,18 @@
             
             <div id="footer_bottom">
             	
-                <div id="footer_bottom_content">
-                	<div id="footer_bottom_content_left">
-                    	<div class="top">Copyright &copy; 2015 Eat’n Park Hospitality Group, Inc. All rights reserved</div>
-                        <div style="height:15px;"></div>
-                        <div class="bottom"><a href="content.aspx?pid=41&ppid=0">Legal Notices</a>&nbsp;|&nbsp;<a href="content.aspx?pid=30&ppid=0">Privacy Policy</a></div>
-                    </div>
-                    
-                    <div id="footer_bottom_content_right">
-                    	<img style="padding-top: 3px;padding-left:10px;" src="images/footer_logo.png" alt="Eat'n Park" />
-                    </div>
-                
-                </div><!--End Footer Bottom Content-->
-            
-            </div><!--End Footer Bottom-->
+							<div id="footer_bottom_content">
+								<div id="footer_bottom_content_left">
+										<div class="top">Copyright &copy; 2022 Eat’n Park Hospitality Group, Inc. All rights reserved</div>
+											<div style="height:15px;"></div>
+											<div class="bottom"><a href="content.aspx?pid=41&ppid=0">Legal Notices</a>&nbsp;|&nbsp;<a href="content.aspx?pid=30&ppid=0">Privacy Policy</a></div>
+											<img style="padding-top: 30px;" src="images/header_logo_dec22.png" alt="Eat'n Park" />
+									</div>
+									
+							
+							</div><!--End Footer Bottom Content-->
+					
+					</div><!--End Footer Bottom-->
         	
         </div><!--End Footer-->
            

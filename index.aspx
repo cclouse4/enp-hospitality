@@ -60,6 +60,28 @@
 </script>
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: HelveticaLTWXX-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/helvetica/pro-regular/
+ * Copyright: Copyright © 2014 Monotype Imaging Inc. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Incn*/
+
+-->
+
+<link rel="stylesheet" type="text/css" href="css/fonts.css"/>
 
 </head>
 
@@ -89,15 +111,16 @@
             
             <div id="topbox_homepage">
             	<div id="topbox_homepage_header">
-                	<%if len(p.image)>0 then%>
+                	<!-- <%if len(p.image)>0 then%>
                 		<img src="upload/page/<%=p.image%>" style="height:294px;width:934px;"/>
-                    <%end if%>
-                    <!--<img src="images/header_filler.png" style="height:292px;width:936px;margin-top:3px;	border-width:1px;border-style: solid;border-color: blue;"/>-->
+                    <%end if%> -->
+                    <img src="upload/page/homepage-salad-revised-dec22.jpg" style="height:292px;width:936px;margin-top:3px;	border-width:1px;border-style: solid;"/>
                 </div>
             
                 <div id="topbox_homepage_content">
                 
-                    <img src="images/topbox_header.png" alt="We are a company of big dreams and humble beginnings" />
+                    <!-- <img src="images/topbox_header.png" alt="We are a company of big dreams and humble beginnings" /> -->
+										<h1 class="white-text">We are a company of big dreams and humble beginnings</h1>
 						
                         <p>
 							<%=p.header1%>
@@ -119,8 +142,8 @@
                             <div style="margin: 0 auto; max-width: 300px;">
                                 <a href="content.aspx?pid=33&ppid=1"><img src="images/logos/home_logos_01.png?1=1" onMouseOver="this.src='images/logos/home_logos_rollover_01.png?1=1';" 
         onmouseout="this.src='images/logos/home_logos_01.png?1=1';" alt="Parkhurst Dining Services" /></a>
-                            	<a href="content.aspx?pid=35&ppid=1"><img src="images/logos/home_logos_03.png?1=1" onMouseOver="this.src='images/logos/home_logos_rollover_03.png?1=1';" 
-        onmouseout="this.src='images/logos/home_logos_03.png?1=1';" alt="Smiley Cookie: Share A Smile!" style='margin-left: 10px'/></a><br />
+                            	<a href="content.aspx?pid=35&ppid=1"><img src="images/logos/smiley_cookie_logo_dec22.png?1=1" onMouseOver="this.src='images/logos/smiley_cookie_logo_rollover_dec22.png?1=1';" 
+        onmouseout="this.src='images/logos/smiley_cookie_logo_dec22.png?1=1';" alt="Smiley Cookie: Share A Smile!" style='margin-left: 10px'/></a><br />
                             </div>
         
                             
@@ -129,8 +152,8 @@
         
         					<a href="http://www.enphospitality.com/content.aspx?pid=44&ppid=1"><img src="images/logos/home_logos_06.png?1=3" onMouseOver="this.src='images/logos/home_logos_rollover_06.png?1=3';" 
         onmouseout="this.src='images/logos/home_logos_06.png?1=3';" alt="Hello Bistro" style='margin-left: 25px'/></a>
-        					<a href="content.aspx?pid=32&ppid=1"><img src="images/logos/home_logos_07.png?1=1" onMouseOver="this.src='images/logos/home_logos_rollover_07.png?1=1';" 
-       onmouseout="this.src='images/logos/home_logos_07.png?1=1';" alt="Eat'n Park" style='margin-left: 25px'/></a> 
+        					<a href="content.aspx?pid=32&ppid=1"><img src="images/logos/eatnpark-logo-dec22.png?1=1" onMouseOver="this.src='images/logos/eatnpark-rollover-logo-dec22.png?1=1';" 
+       onmouseout="this.src='images/logos/eatnpark-logo-dec22.png?1=1';" alt="Eat'n Park" style='margin-left: 25px'/></a> 
         					
                             
                        	</div>
@@ -148,7 +171,7 @@
                 
 			</div><!--End Middlebox-->
             
-            <div id="imagebox_homepage">
+            <!-- <div id="imagebox_homepage">
             		<div style="height:2px;width:945px;">
                     </div>
 					<table width="937">
@@ -163,7 +186,6 @@
                                     
                     				<div id="imagebox_homepage_left_inner">
                                         <p><%=p.tout(0).text%></p>
-                                        <!--<p>Caption Goes Here</p>-->
                         			</div>
                     			</div>
                             </td>
@@ -177,7 +199,6 @@
                                       
                     				<div id="imagebox_homepage_middle_inner">
                                     	<p><%=p.tout(1).text%></p>
-                        				<!--<p>Pancake smiley with children</p>-->
                         			</div>
                     			</div>
                             </td>
@@ -193,14 +214,13 @@
                                     
                                     <div id="imagebox_homepage_right_inner">
                                     	<p><%=p.tout(2).text%></p>
-                        				<!--<p>Caption Goes Here</p>-->
                         			</div>
                     			</div>
                             </td>
                         </tr>
                     </table>
 
-            </div><!--End Imagebox-->
+            </div>End Imagebox -->
             
          
     	</div><!--End Content-->
@@ -208,7 +228,7 @@
         <div id="footer">
         
         	<div id="contact">
-            	<div id="contact_content">
+            	<!-- <div id="contact_content">
                 	
                     <div style="float: left;">
                     	<img src="images/contact_divider_1.png" alt="Divider" style="vertical-align:middle;"/><img src="images/contact_information.png" alt="Contact Information" style="margin-left: 25px; vertical-align: middle;"/>
@@ -216,7 +236,6 @@
                     	
                     <div style="float: left; margin-left: 75px;">
                     		<div style="float:left;"><img src="images/contact_divider_1.png" alt="Divider" style="vertical-align:middle;"/></div>
-                        <!--<div style="margin-left: 20px;">-->
                         	
                         	<div style="float:left;margin-left: 30px;margin-top:5px;">
                             
@@ -231,7 +250,6 @@
                     
                     <div style="float: left; margin-left: 75px;">
                     		<div style="float:left;"><img src="images/contact_divider_1.png" alt="Divider" style="vertical-align:middle;"/></div>
-                        <!--<div style="margin-left: 20px;">-->
                         	
                         	<div style="float:left;margin-left: 30px;margin-top:5px;">
                                 
@@ -244,7 +262,9 @@
                         	</div>
                     </div>
                 
-                </div><!--End Contact Content-->
+                </div> -->
+								
+								<!--End Contact Content-->
             
                 <div id="contact_bottom">
                 
@@ -254,20 +274,18 @@
             
             <div id="footer_bottom">
             	
-                <div id="footer_bottom_content">
-                	<div id="footer_bottom_content_left">
-                    	<div class="top">Copyright &copy; 2015 Eat’n Park Hospitality Group, Inc. All rights reserved</div>
-                        <div style="height:15px;"></div>
-                        <div class="bottom"><a href="content.aspx?pid=41&ppid=0">Legal Notices</a>&nbsp;|&nbsp;<a href="content.aspx?pid=30&ppid=0">Privacy Policy</a></div>
-                    </div>
-                    
-                    <div id="footer_bottom_content_right">
-                    	<img style="padding-top: 3px;padding-left:10px;" src="images/footer_logo.png" alt="Eat'n Park" />
-                    </div>
-                
-                </div><!--End Footer Bottom Content-->
-            
-            </div><!--End Footer Bottom-->
+							<div id="footer_bottom_content">
+								<div id="footer_bottom_content_left">
+										<div class="top">Copyright &copy; 2022 Eat’n Park Hospitality Group, Inc. All rights reserved</div>
+											<div style="height:15px;"></div>
+											<div class="bottom"><a href="content.aspx?pid=41&ppid=0">Legal Notices</a>&nbsp;|&nbsp;<a href="content.aspx?pid=30&ppid=0">Privacy Policy</a></div>
+											<img style="padding-top: 30px;" src="images/header_logo_dec22.png" alt="Eat'n Park" />
+									</div>
+									
+							
+							</div><!--End Footer Bottom Content-->
+					
+					</div><!--End Footer Bottom-->
         	
         </div><!--End Footer-->
            

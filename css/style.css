@@ -5,6 +5,25 @@
 	padding: 0;	
 }
 
+.white-text {
+	color: white!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: GillSansNovaBold;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3, h4, h5, h6 {
+	font-size: 16px;
+}
 
 .btn {
     display: inline-block;
@@ -36,10 +55,13 @@
 	box-shadow: none;
 }
 
-html { background:url(../images/cookieTile.gif) repeat; }
+html {
+	/* background:url(../images/cookieTile.gif) repeat; */
+	background-color: black;
+}
 
 body {
-	background:url(../images/mainBackTileBody.jpg) bottom center repeat-x;
+	/* background:url(../images/mainBackTileBody.jpg) bottom center repeat-x; */
 	background-color: #b3b1af;
 	min-width: 945px;
 }
@@ -60,7 +82,8 @@ body {
 	z-index: 1;
 	width: 100%;
 	height: 130px;
-	background-image:url(../images/header.gif);
+	/* background-image:url(../images/header.gif); */
+	background-color: black;
 	background-position: top center;
 	background-repeat: repeat-x;
 }
@@ -250,7 +273,8 @@ body {
 }
 
 #middlebox_content_left .subnav_item {
-	font-family: 'Century Gothic', 'Tw Cen MT', Futura, 'URW Gothic L', Arial, sans-serif;
+	/* font-family: 'Century Gothic', 'Tw Cen MT', Futura, 'URW Gothic L', Arial, sans-serif; */
+	font-family: GillSansNovaMedium;
 	font-size: 12px;
 	font-weight: bold;
 	margin-left: 11px;
@@ -265,7 +289,8 @@ body {
 
 #middlebox_content_right h2 {
 	padding-bottom: 15px;
-	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
+	/* font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif; */
+	font-family: GillSansNovaMedium;
 	font-size: 14px;
 	color: #333333;
 	text-transform:uppercase;
@@ -453,7 +478,8 @@ body {
 #middlebox_homepage_right h2 {
 	padding-top: 10px;
 	padding-bottom: 15px;
-	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
+	/* font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif; */
+	font-family: GillSansNovaMedium;
 	font-size: 14px;
 	color: #333333;
 	text-transform:uppercase;
@@ -589,7 +615,7 @@ body {
 #contact {
 	/*width: 1292px;*/
 	width: 100%;
-	height: 225px;
+	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -605,7 +631,8 @@ body {
 }
 
 #contact_content .top {
-	font-family: 'Century Gothic', 'Tw Cen MT', Futura, 'URW Gothic L', Arial, sans-serif;
+	/* font-family: 'Century Gothic', 'Tw Cen MT', Futura, 'URW Gothic L', Arial, sans-serif; */
+	font-family: GillSansNovaMedium;
 	font-size: 12px;
 	color: #404040; 
 	font-weight: bold;
@@ -655,9 +682,13 @@ body {
 }
 
 #footer_bottom_content_left {
-	width: 350px;
+	width: 100%;
+	text-align: center;
 	position: relative;
-	float: left;
+}
+
+#footer_bottom_content_left div {
+	width: 100%;
 }
 
 #footer_bottom_content_right {
@@ -755,7 +786,8 @@ a img {
 .timeline_modals h1, h2, h3, h4, h5, h6 {
 
 	padding-bottom: 15px;
-	font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif;
+	/* font-family: "Century Gothic", "Tw Cen MT", Futura, "URW Gothic L", Arial, sans-serif; */
+	font-family: GillSansNovaMedium;
 	font-size: 14px;
 	color: #333333;
 	text-transform:uppercase;

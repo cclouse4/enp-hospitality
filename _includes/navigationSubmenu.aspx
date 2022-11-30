@@ -43,7 +43,7 @@ end if
             <% end if %>
             <% if ppid = 1 OR pid = 1 then %>
             
-                <tr><td width="20"><img src="images/subnav_bar_item.png" /></td><td colspan="2"><a href="content.aspx?pid=1&ppid=0"><img src="images/subnav_ourbrands.png" alt="Our Brands" style="padding-left: 5px;"/></a></td></tr>
+                <tr><td width="20"><img src="images/subnav_bar_item.png" /></td><td colspan="2"><a href="content.aspx?pid=1&ppid=0"><h1>Our Brands</h1></a></td></tr>
                 
                 <% idOfParent = 1 %>
                 
@@ -51,7 +51,7 @@ end if
             
             <% if ppid = 2 OR pid = 2 then %>
             
-                <tr><td width="20"><img src="images/subnav_bar_item.png" /></td><td colspan="2"><a href="content.aspx?pid=37&ppid=2"><img src="images/subnav_community.png" alt="Community Commitment" style="padding-left: 5px;"/></a></td></tr>
+                <tr><td width="20"><img src="images/subnav_bar_item.png" /></td><td colspan="2"><a href="content.aspx?pid=37&ppid=2"><h1>Community Commitment</h1></a></td></tr>
                 
                 <% idOfParent = 2 %>
                 
@@ -67,7 +67,7 @@ end if
             
             <% if ppid = 4 OR pid = 4 then %>
             
-                <tr><td width="20"><img src="images/subnav_bar_item.png" /></td><td colspan="2"><a href="content.aspx?pid=4&ppid=0"><img src="images/subnav_careers.png" alt="Careers" style="padding-left: 5px;"/></a></td></tr>
+                <tr><td width="20"><img src="images/subnav_bar_item.png" /></td><td colspan="2"><a href="content.aspx?pid=4&ppid=0"><h1>Careers</h1></a></td></tr>
                 
                 <% idOfParent = 4 %>
                 
